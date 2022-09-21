@@ -7,10 +7,10 @@ const title = document.getElementsByClassName("title")[0];
 
 const phrases = [
   "My Cup Of Tea",
-  "Your problem is similar to mine",
+  "Barking Up The Wrong Tree",
   "My headache has gone",
-  "Everything But The Kitchen Sink",
-  "It's Not Brain Surgery",
+  "Curiosity Killed The Cat",
+  "Short End of the Stick",
 ];
 
 let missed = 0;
@@ -39,7 +39,7 @@ btnReset.addEventListener("click", () => {
     ceva.removeAttribute("disabled");
   });
   lives.forEach((live) => {
-    live.setAttribute("src", "/images/liveHeart.png");
+    live.setAttribute("src", "images/liveHeart.png");
   });
   missed = 0;
 });
@@ -65,7 +65,7 @@ qwerty.forEach((ceva) => {
       missed += 1;
       let change = 5 - missed;
       if (missed < 6) {
-        lives[change].setAttribute("src", "/images/lostHeart.png");
+        lives[change].setAttribute("src", "images/lostHeart.png");
       }
     }
 
